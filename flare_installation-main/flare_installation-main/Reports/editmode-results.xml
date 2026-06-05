@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="12" result="Passed" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0,1608502">
+  <test-suite type="TestSuite" id="1000" name="flare_installation" fullname="flare_installation" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.160850" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1019" name="FlareSystem.EditModeTests.dll" fullname="C:/Users/gosha/unityproject/flare_installation/Library/ScriptAssemblies/FlareSystem.EditModeTests.dll" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.135051" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="54660" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1020" name="FlareSystem" fullname="FlareSystem" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.133544" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1021" name="Tests" fullname="FlareSystem.Tests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.132566" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="ArchiveRecordEvaluationTests" fullname="FlareSystem.Tests.ArchiveRecordEvaluationTests" classname="FlareSystem.Tests.ArchiveRecordEvaluationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.053686" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="EvaluateRecord_HlopokFlagProducesAlarm" fullname="FlareSystem.Tests.ArchiveRecordEvaluationTests.EvaluateRecord_HlopokFlagProducesAlarm" methodname="EvaluateRecord_HlopokFlagProducesAlarm" classname="FlareSystem.Tests.ArchiveRecordEvaluationTests" runstate="Runnable" seed="1089054928" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.026384" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="EvaluateRecord_OtrivFlagProducesAlarm" fullname="FlareSystem.Tests.ArchiveRecordEvaluationTests.EvaluateRecord_OtrivFlagProducesAlarm" methodname="EvaluateRecord_OtrivFlagProducesAlarm" classname="FlareSystem.Tests.ArchiveRecordEvaluationTests" runstate="Runnable" seed="995916570" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.000389" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="EvaluateRecord_PFlareAboveHlopokThresholdProducesAlarm" fullname="FlareSystem.Tests.ArchiveRecordEvaluationTests.EvaluateRecord_PFlareAboveHlopokThresholdProducesAlarm" methodname="EvaluateRecord_PFlareAboveHlopokThresholdProducesAlarm" classname="FlareSystem.Tests.ArchiveRecordEvaluationTests" runstate="Runnable" seed="1036843160" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.000301" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1005" name="CameraControllerTests" fullname="FlareSystem.Tests.CameraControllerTests" classname="FlareSystem.Tests.CameraControllerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.028748" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1006" name="ApplyPresetImmediate_SetsCameraAndOrbitTarget" fullname="FlareSystem.Tests.CameraControllerTests.ApplyPresetImmediate_SetsCameraAndOrbitTarget" methodname="ApplyPresetImmediate_SetsCameraAndOrbitTarget" classname="FlareSystem.Tests.CameraControllerTests" runstate="Runnable" seed="91880812" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.020417" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="CameraController_CanStoreSixCourseworkPresets" fullname="FlareSystem.Tests.CameraControllerTests.CameraController_CanStoreSixCourseworkPresets" methodname="CameraController_CanStoreSixCourseworkPresets" classname="FlareSystem.Tests.CameraControllerTests" runstate="Runnable" seed="1816194066" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.006285" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1008" name="FlameControllerStateTests" fullname="FlareSystem.Tests.FlameControllerStateTests" classname="FlareSystem.Tests.FlameControllerStateTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.033191" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1010" name="AlarmVisualControllerCreatesGeneratedAudioClip" fullname="FlareSystem.Tests.FlameControllerStateTests.AlarmVisualControllerCreatesGeneratedAudioClip" methodname="AlarmVisualControllerCreatesGeneratedAudioClip" classname="FlareSystem.Tests.FlameControllerStateTests" runstate="Runnable" seed="662477497" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.012657" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="FlameControllerSwitchesTrafficLightStates" fullname="FlareSystem.Tests.FlameControllerStateTests.FlameControllerSwitchesTrafficLightStates" methodname="FlameControllerSwitchesTrafficLightStates" classname="FlareSystem.Tests.FlameControllerStateTests" runstate="Runnable" seed="1405028518" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.018467" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1011" name="FlareConstantsTests" fullname="FlareSystem.Tests.FlareConstantsTests" classname="FlareSystem.Tests.FlareConstantsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.004368" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1012" name="EvaluateRecord_FlameLiftConditionProducesAlarm" fullname="FlareSystem.Tests.FlareConstantsTests.EvaluateRecord_FlameLiftConditionProducesAlarm" methodname="EvaluateRecord_FlameLiftConditionProducesAlarm" classname="FlareSystem.Tests.FlareConstantsTests" runstate="Runnable" seed="1369831195" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.000771" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="EvaluateRecord_NormalRecordIsNormal" fullname="FlareSystem.Tests.FlareConstantsTests.EvaluateRecord_NormalRecordIsNormal" methodname="EvaluateRecord_NormalRecordIsNormal" classname="FlareSystem.Tests.FlareConstantsTests" runstate="Runnable" seed="1115209786" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.001573" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1014" name="FlareCsvLoaderTests" fullname="FlareSystem.Tests.FlareCsvLoaderTests" classname="FlareSystem.Tests.FlareCsvLoaderTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.004981" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1015" name="LoadRecords_ReadsSemicolonCsv" fullname="FlareSystem.Tests.FlareCsvLoaderTests.LoadRecords_ReadsSemicolonCsv" methodname="LoadRecords_ReadsSemicolonCsv" classname="FlareSystem.Tests.FlareCsvLoaderTests" runstate="Runnable" seed="1666135555" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.003970" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1016" name="LogisticRegressionRiskModelTests" fullname="FlareSystem.Tests.LogisticRegressionRiskModelTests" classname="FlareSystem.Tests.LogisticRegressionRiskModelTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.004150" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1018" name="CalculateProbability_LowPurgeAndHighFlareIsHigherThanNormal" fullname="FlareSystem.Tests.LogisticRegressionRiskModelTests.CalculateProbability_LowPurgeAndHighFlareIsHigherThanNormal" methodname="CalculateProbability_LowPurgeAndHighFlareIsHigherThanNormal" classname="FlareSystem.Tests.LogisticRegressionRiskModelTests" runstate="Runnable" seed="919490600" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.001947" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1017" name="CalculateProbability_ReturnsValueBetweenZeroAndOne" fullname="FlareSystem.Tests.LogisticRegressionRiskModelTests.CalculateProbability_ReturnsValueBetweenZeroAndOne" methodname="CalculateProbability_ReturnsValueBetweenZeroAndOne" classname="FlareSystem.Tests.LogisticRegressionRiskModelTests" runstate="Runnable" seed="933367972" result="Passed" start-time="2026-05-31 10:35:07Z" end-time="2026-05-31 10:35:07Z" duration="0.000830" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:\users\gosha\unityproject\flare_installation\Reports\editmode-results.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

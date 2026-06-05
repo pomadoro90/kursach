@@ -1,0 +1,20 @@
+﻿Unity Scene Validation Report
+Scene: Assets/Scenes/FlareInstallationScene_Rebuilt.unity
+Time: 2026-05-31 12:56:09
+
+[OK] сцена существует: Assets/Scenes/FlareInstallationScene_Rebuilt.unity
+[OK] FBX объект находится в сцене
+[OK] нет отдельного объекта факела, висящего в воздухе
+[OK] есть Main Camera
+[OK] есть Directional Light
+[OK] есть Canvas
+[OK] есть EventSystem
+[OK] есть ArchivePanel
+[OK] есть WarningPanel
+[OK] есть FlameEffect
+[OK] есть PipeFlowController
+[OK] есть FlowWaypointsRoot
+[OK] CSV найден: Assets/StreamingAssets/variant_3_15.csv
+[OK] UI кнопки назначены
+[OK] нет Missing Script
+[OK] контроллеры стартуют без NullReferenceException в edit validation

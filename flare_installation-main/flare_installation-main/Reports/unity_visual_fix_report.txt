@@ -1,0 +1,33 @@
+Unity visual fix report
+Scene: Assets/Scenes/FlareInstallationScene_Rebuilt.unity
+Backup: Assets/Scenes/FlareInstallationScene_Rebuilt_Before_FlowSensorUiFix.unity
+
+Flow paths fixed:
+- ReliefGasFlow recreated from separator toward flare stack on the large gas line.
+- PurgeGasFlow recreated as a compact blue route along the low blue/pilot line.
+- SteamFlow recreated close to the flare stack up to the tip.
+- CondensateFlow recreated as a low route near the base/foundation line.
+
+Waypoint objects:
+- Old FlowWaypointsRoot and generated flow markers were removed.
+- New waypoint transforms were created under FlowWaypointsRoot with small runtime markers only.
+
+Sensors:
+- Old floating Sensor_* spheres and oversized Sensor_*_Light objects were removed.
+- 7 small indicator boxes were placed on or close to the separator, stack and pipe surfaces.
+- Hover targets now use these boxes instead of floating markers.
+
+Flame:
+- FlameMesh/placeholder mesh was removed from the nozzle.
+- FlameEffect uses ParticleSystem billboard particles and a Point Light over the flare tip.
+
+UI:
+- ArchivePanel record slider and buttons were rebuilt within panel bounds.
+- WarningPanel rows now use Label -> Slider -> Value layout.
+- CanvasScaler is Scale With Screen Size, 1920x1080, Match 0.5.
+
+Screenshots:
+- C:\Users\gosha\unityproject\flare_installation\Screenshots\UnityFix_FlowsSensorsUi
+
+Remaining checks:
+- Fine manual waypoint nudging can still be done in Scene View if exact pipe centerline differs from the generated route.

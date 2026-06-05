@@ -1,0 +1,12 @@
+{
+  "name": "FlareSystem.EditModeTests",
+  "references": [
+    "FlareSystem.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

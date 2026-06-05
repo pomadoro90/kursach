@@ -1,0 +1,10 @@
+{
+  "name": "FlareSystem.PlayModeTests",
+  "references": [
+    "FlareSystem.Runtime"
+  ],
+  "includePlatforms": [],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

@@ -1,0 +1,20 @@
+Unity camera and environment fix report
+Scene: Assets/Scenes/FlareInstallationScene_Rebuilt.unity
+Backup: Assets/Scenes/FlareInstallationScene_Rebuilt_Before_CameraEnvironmentFix.unity
+
+Camera:
+- Main Camera now uses near clip 0.1, far clip 1000, FOV from camera presets.
+- CameraController has six smooth presets: Overview, Separator, Flare Stack, Flare Top / Flame, Piping / Flows, UI Overview.
+- Mouse controls: RMB orbit, wheel zoom, MMB or Alt+LMB pan, with distance and pitch limits.
+- Mouse camera input is ignored while the pointer is over Unity UI.
+
+Environment:
+- EnvironmentRoot created with ConcreteBase, AsphaltRoad, SafetyFence, LightPoles, BackgroundStorageTanks, BackgroundPipeRack and UtilityDetails.
+- Environment is made from Unity primitives and Built-in Standard materials only.
+- Environment colliders were removed to avoid blocking sensor hover and flare stack clicks.
+
+Lighting:
+- Ambient light and directional/fill intensities were balanced for non-overexposed industrial metal.
+
+Model bounds used for framing: center (0.00, 16.95, 0.00), size (30.21, 33.91, 16.01)
+Screenshots target folder: C:\Users\gosha\unityproject\flare_installation\Screenshots\UnityCamera
