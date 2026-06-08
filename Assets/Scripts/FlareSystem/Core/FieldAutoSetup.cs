@@ -65,10 +65,12 @@ namespace FlareSystem
             if (modelRoot != null)
             {
                 resolver.modelRoot = modelRoot;
+                Debug.Log("[FieldAutoSetup] Model root assigned: " + modelRoot.name);
             }
             else if (resolver.modelRoot == null)
             {
                 resolver.modelRoot = root.transform;
+                Debug.LogWarning("[FieldAutoSetup] No 3D model found in scene! Drag 'combined_field_model.fbx' from Project window into the Hierarchy, then press Play again.");
             }
 
             controller.archiveModeController = archive;
@@ -302,7 +304,7 @@ namespace FlareSystem
             GameObject textObject = new GameObject(name);
             textObject.transform.SetParent(parent, false);
             Text text = textObject.AddComponent<Text>();
-            text.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             text.fontSize = fontSize;
             text.alignment = alignment;
             text.color = Color.white;
