@@ -11,7 +11,6 @@ namespace FlareSystem
     {
         private const string ScenePath = "Assets/Scenes/PetroleumFieldFlareScene.unity";
         private const string CsvPath = "Assets/StreamingAssets/variant_3_4.csv";
-        private const string FieldModelPath = "Assets/Models/combined_field_model.fbx";
 
         [MenuItem("Flare System/Field Model/Setup Petroleum Field Scene")]
         public static void SetupSceneFromMenu()
@@ -32,7 +31,6 @@ namespace FlareSystem
             FieldObjectResolver resolver = GetOrAdd<FieldObjectResolver>(root);
             FieldPipeFlowController pipeFlow = GetOrAdd<FieldPipeFlowController>(root);
             FieldFlameController flame = EnsureFieldFlame(root.transform);
-            Transform modelRoot = EnsureFieldModel(root.transform);
 
             controller.archiveModeController = archive;
             controller.earlyWarningController = warning;
@@ -44,7 +42,7 @@ namespace FlareSystem
             warning.controller = controller;
             warning.riskModel = risk;
 
-            resolver.modelRoot = modelRoot != null ? modelRoot : root.transform;
+            resolver.modelRoot = root.transform;
             pipeFlow.rebuildRoutesOnAwake = true;
             pipeFlow.BuildFieldRoutes();
             flame.EnsureFieldPlacement();
@@ -91,7 +89,6 @@ namespace FlareSystem
         {
             int errors = 0;
             errors += Check(File.Exists(ToProjectFullPath(CsvPath)), "CSV exists: " + CsvPath);
-            errors += Check(File.Exists(ToProjectFullPath(FieldModelPath)), "Field model exists: " + FieldModelPath);
             errors += Check(FindObject<FieldPipeFlowController>() != null, "FieldPipeFlowController exists in scene");
             errors += Check(FindObject<FieldFlameController>() != null, "FieldFlameController exists in scene");
             errors += Check(FieldModelConstants.Routes.Length == 11, "11 field pipe routes are defined");
@@ -118,35 +115,6 @@ namespace FlareSystem
             flameObject.transform.SetParent(root, true);
             flameObject.transform.position = FieldModelConstants.FlareTipPosition;
             return flameObject.AddComponent<FieldFlameController>();
-        }
-
-        private static Transform EnsureFieldModel(Transform root)
-        {
-            Transform existing = root.Find("combined_field_model");
-            if (existing != null)
-            {
-                return existing;
-            }
-
-            GameObject modelPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(FieldModelPath);
-            if (modelPrefab == null)
-            {
-                Debug.LogWarning("Petroleum field model not found at " + FieldModelPath + ". Drag the model into the scene or restore the asset.");
-                return null;
-            }
-
-            GameObject modelInstance = (GameObject)PrefabUtility.InstantiatePrefab(modelPrefab);
-            if (modelInstance == null)
-            {
-                modelInstance = Object.Instantiate(modelPrefab);
-            }
-
-            modelInstance.name = "combined_field_model";
-            modelInstance.transform.SetParent(root, true);
-            modelInstance.transform.localPosition = Vector3.zero;
-            modelInstance.transform.localRotation = Quaternion.identity;
-            modelInstance.transform.localScale = Vector3.one;
-            return modelInstance.transform;
         }
 
         private static void EnsureFacilityAnchor(Transform root, string name, Vector3 position)
