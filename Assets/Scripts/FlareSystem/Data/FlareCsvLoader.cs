@@ -118,15 +118,15 @@ namespace FlareSystem
         {
             record = new FlareDataRecord();
 
-            int n;
-            float pFlare;
-            float qFlare;
-            float pPurge;
-            float qPurge;
-            float tFlame;
-            float steamQ;
-            int otriv;
-            int hlopok;
+            int n = 0;
+            float pFlare = 0f;
+            float qFlare = 0f;
+            float pPurge = 0f;
+            float qPurge = 0f;
+            float tFlame = 0f;
+            float steamQ = 0f;
+            int otriv = 0;
+            int hlopok = 0;
 
             bool ok =
                 TryParseInt(cells[0], lineNumber, "N", out n) &&
